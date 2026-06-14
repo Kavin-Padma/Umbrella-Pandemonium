@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umbrella Pandemonium &mdash; Capstone Portfolio</title>
+  <meta name="description" content="Umbrella Pandemonium: a barrel CAM-driven origami umbrella inspired by NASA's StarShade coronagraph. PLTW EDD Capstone, Monroe Township High School 2025-26." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<!-- nav injected by nav.js -->
+<div id="nav-placeholder"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="rainCanvas" class="rain-bg"></canvas>
+  <div class="hero-content">
+    <div class="hero-eyebrow">PLTW EDD CAPSTONE &middot; MONROE TOWNSHIP HIGH SCHOOL &middot; 2025&ndash;26</div>
+    <h1 class="hero-title">
+      <span class="hero-title-skc">UP</span>
+      <span class="hero-title-star">Star</span><span class="hero-title-shade">Shade</span>
+    </h1>
+    <p class="hero-subtitle">
+      A barrel CAM&ndash;driven origami umbrella inspired by<br/>
+      NASA&rsquo;s StarShade coronagraph deployment mechanism
+    </p>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-number">124</div>
+        <div class="stat-label">Survey Respondents</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">9</div>
+        <div class="stat-label">Patents Analyzed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">17</div>
+        <div class="stat-label">CAD Iterations</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$10&ndash;20</div>
+        <div class="stat-label">Target Retail Price</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="pages/problem.html" class="btn-primary">Explore the Project</a>
+      <a href="pages/simulation.html" class="btn-outline">Launch Simulator</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- PROCESS OVERVIEW -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-label">THE ENGINEERING DESIGN PROCESS</div>
+    <h2 class="section-title">From Problem to Prototype</h2>
+    <p class="section-desc">
+      Six months of iteration &mdash; from a frustrating rainy-day observation to a
+      3D-printed barrel CAM mechanism drawing on NASA aerospace engineering.
+    </p>
+    <div class="process-grid">
+      <a href="pages/problem.html" class="process-card">
+        <div class="process-num">01</div>
+        <div class="process-icon">&#127783;&#65039;</div>
+        <h3>Problem Statement</h3>
+        <p>Traditional umbrellas flip inside out, corrode, injure users, and break under the exact conditions they&rsquo;re designed for.</p>
+        <div class="process-arrow">&rarr;</div>
+      </a>
+      <a href="pages/research.html" class="process-card">
+        <div class="process-num">02</div>
+        <div class="process-icon">&#128300;</div>
+        <h3>Research &amp; Survey</h3>
+        <p>124 respondents. 9 patents. Market valued at $5.7B. NASA StarShade coronagraph as the design inspiration.</p>
+        <div class="process-arrow">&rarr;</div>
+      </a>
+      <a href="pages/design.html" class="process-card">
+        <div class="process-num">03</div>
+        <div class="process-icon">&#9881;&#65039;</div>
+        <h3>Design &amp; Specifications</h3>
+        <p>Barrel CAM with 3-start helical groove, FollowerRing with 6 rod sockets, designed in Fusion 360 via Python API.</p>
+        <div class="process-arrow">&rarr;</div>
+      </a>
+      <a href="pages/prototype.html" class="process-card">
+        <div class="process-num">04</div>
+        <div class="process-icon">&#128424;&#65039;</div>
+        <h3>Prototype</h3>
+        <p>Barrel CAM v9 &mdash; 3D-printed, physically tested. &Oslash;104mm, 263mm tall, 6061-T6 aluminum rib connection points.</p>
+        <div class="process-arrow">&rarr;</div>
+      </a>
+      <a href="pages/testing.html" class="process-card">
+        <div class="process-num">05</div>
+        <div class="process-icon">&#128202;</div>
+        <h3>Testing &amp; Results</h3>
+        <p>Waterproofing, wind resistance at multiple speeds, weight, open/close cycle testing, and user comfort evaluations.</p>
+        <div class="process-arrow">&rarr;</div>
+      </a>
+      <a href="pages/simulation.html" class="process-card">
+        <div class="process-num">06</div>
+        <div class="process-icon">&#128187;</div>
+        <h3>Interactive Simulator</h3>
+        <p>Live deployment animation, rain/wind physics, and 3,000-cycle durability comparison vs. traditional umbrellas.</p>
+        <div class="process-arrow">&rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CORE INNOVATION -->
+<section class="innovation-section">
+  <div class="container innovation-inner">
+    <div class="innovation-text">
+      <div class="section-label">THE CORE INNOVATION</div>
+      <h2 class="section-title">Barrel CAM Mechanism</h2>
+      <p>
+        Traditional umbrellas use a sliding-runner mechanism unchanged since Alexander Ege&rsquo;s
+        1880 patent. The Umbrella Pandemonium replaces it with a <strong>barrel CAM</strong> &mdash;
+        a stationary helical-grooved cylinder that converts shaft push into radial rib rotation,
+        eliminating pinch-point hazards and distributing wind load evenly across all six ribs.
+      </p>
+      <p>
+        The mechanism draws directly from NASA&rsquo;s StarShade coronagraph satellite, which uses
+        precision petal deployment to block starlight for exoplanet observation. We adapted
+        the two-phase origami unfurl sequence for an everyday consumer product.
+      </p>
+      <div class="innovation-specs">
+        <div class="spec-item">
+          <span class="spec-val">3-start</span>
+          <span class="spec-key">Helical Groove</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-val">6&thinsp;mm</span>
+          <span class="spec-key">Groove Width</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-val">1.5 rev</span>
+          <span class="spec-key">Full Deploy</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-val">&lt;&thinsp;2&thinsp;lbs</span>
+          <span class="spec-key">Target Weight</span>
+        </div>
+      </div>
+      <a href="pages/design.html" class="btn-primary">See the Full Design &rarr;</a>
+    </div>
+    <div class="innovation-visual">
+      <canvas id="camCanvas" width="380" height="380"></canvas>
+      <div class="cam-label">Barrel CAM Cross-Section &mdash; Live Animation</div>
+    </div>
+  </div>
+</section>
+
+<!-- SURVEY STATS -->
+<section class="survey-section">
+  <div class="container">
+    <div class="section-label">WHAT USERS TOLD US</div>
+    <h2 class="section-title">The Data Speaks for Itself</h2>
+    <p class="section-desc">124 respondents &middot; The Umbrella Pandemonium Survey &middot; 2025</p>
+    <div class="survey-grid">
+      <div class="survey-stat">
+        <div class="survey-pct">41.9%</div>
+        <div class="survey-bar"><div class="survey-fill" style="--w:41.9%"></div></div>
+        <div class="survey-desc">Umbrella flipped inside out</div>
+      </div>
+      <div class="survey-stat">
+        <div class="survey-pct">33.1%</div>
+        <div class="survey-bar"><div class="survey-fill" style="--w:33.1%"></div></div>
+        <div class="survey-desc">Too bulky to carry</div>
+      </div>
+      <div class="survey-stat">
+        <div class="survey-pct">26.6%</div>
+        <div class="survey-bar"><div class="survey-fill" style="--w:26.6%"></div></div>
+        <div class="survey-desc">Canopy tears / rips</div>
+      </div>
+      <div class="survey-stat">
+        <div class="survey-pct">15.3%</div>
+        <div class="survey-bar"><div class="survey-fill" style="--w:15.3%"></div></div>
+        <div class="survey-desc">Rusting &amp; corrosion</div>
+      </div>
+    </div>
+    <a href="pages/research.html" class="btn-outline" style="margin-top:2.5rem;display:inline-block;">
+      Full Research &rarr;
+    </a>
+  </div>
+</section>
+
+<!-- footer injected by nav.js -->
+<div id="footer-placeholder"></div>
+
+<script src="js/nav.js"></script>
+<script src="js/cam-anim.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
